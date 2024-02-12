@@ -75,3 +75,72 @@ let charCodeOfJ = challenge.charCodeAt(11);
 
 console.log(charCodeOfJ);
 
+//15.Use indexOf to determine the position of the first occurrence of a in 30 Days Of JavaScript
+let text = "30 Days Of JavaScript";
+let position = text.indexOf('a');
+
+console.log("The position of the first occurrence of 'a' is: " + position);
+
+//16.Use lastIndexOf to determine the position of the last occurrence of a in 30 Days Of JavaScript.
+ text = "30 Days Of JavaScript";
+let lastPosition = text.lastIndexOf('a');
+
+console.log("The position of the last occurrence of 'a' is: " + lastPosition);
+
+//17.Use indexOf to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+let sentence = 'You cannot end a sentence with because because because is a conjunction';
+position = sentence.indexOf('because');
+
+console.log("The position of the first occurrence of 'because' is: " + position);
+
+//18.Use lastIndexOf to find the position of the last occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+
+ sentence = 'You cannot end a sentence with because because because is a conjunction';
+ lastPosition = sentence.lastIndexOf('because');
+
+console.log("The position of the last occurrence of 'because' is: " + lastPosition);
+
+//19.Use search to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+
+ sentence = 'You cannot end a sentence with because because because is a conjunction';
+ position = sentence.search('because');
+
+console.log("The position of the first occurrence of 'because' is: " + position);
+
+//20.let stringWithWhitespace = ' 30 Days Of JavaScript ';
+let stringWithWhitespace = ' 30 Days Of JavaScript ';
+let trimmedString = stringWithWhitespace.trim();
+
+console.log("Original string: '" + stringWithWhitespace + "'");
+console.log("Trimmed string: '" + trimmedString + "'");
+
+//21.Use startsWith() method with the string 30 Days Of JavaScript and make the result true
+let myString = '30 Days Of JavaScript';
+let startsWithResult = myString.startsWith('30');
+
+console.log("Does the string start with '30'? " + startsWithResult);
+
+//22.Use endsWith() method with the string 30 Days Of JavaScript and make the result true
+ myString = '30 Days Of JavaScript';
+let endsWithResult = myString.endsWith('JavaScript');
+
+console.log("Does the string end with 'JavaScript'? " + endsWithResult);
+
+//23.Use match() method to find all the a’s in 30 Days Of JavaScript
+myString = '30 Days Of JavaScript';
+let matches = myString.match(/a/g);
+
+console.log("All occurrences of 'a':", matches);
+
+//24.Use concat() and merge '30 Days of' and 'JavaScript' to a single string, '30 Days Of JavaScript'
+let firstString = '30 Days of ';
+let secondString = 'JavaScript';
+let concatenatedString = firstString.concat(secondString);
+
+console.log("Concatenated String:", concatenatedString);
+
+//25.Use repeat() method to print 30 Days Of JavaScript 2 times
+ myString = '30 Days Of JavaScript';
+let repeatedString = myString.repeat(2);
+
+console.log(repeatedString);
